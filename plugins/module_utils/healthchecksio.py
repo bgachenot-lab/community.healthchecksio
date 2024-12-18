@@ -140,7 +140,6 @@ class HealthchecksioHelper:
             ),
             management_api_base_url=dict(
                 type="str",
-                aliases=["management_api_base_url"],
                 fallback=(
                     env_fallback,
                     [
@@ -154,7 +153,6 @@ class HealthchecksioHelper:
             ),
             ping_api_base_url=dict(
                 type="str",
-                aliases=["ping_api_base_url"],
                 fallback=(
                     env_fallback,
                     [
@@ -168,7 +166,6 @@ class HealthchecksioHelper:
             ),
             ping_api_token=dict(
                 type="str",
-                aliases=["ping_api_key"],
                 fallback=(
                     env_fallback,
                     [
