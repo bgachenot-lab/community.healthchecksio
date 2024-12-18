@@ -12,6 +12,8 @@
       community.healthchecksio.ping:
         state: present
         api_key: "{{ api_key }}"
+        management_api_base_url: "{{ management_api_base_url }}"
+        ping_api_base_url: "{{ ping_api_base_url }}"
         uuid: "{{ check_uuid }}"
         signal: start
       register: result
@@ -27,6 +29,8 @@
       community.healthchecksio.ping:
         state: present
         api_key: "{{ api_key }}"
+        management_api_base_url: "{{ management_api_base_url }}"
+        ping_api_base_url: "{{ ping_api_base_url }}"
         uuid: "{{ check_uuid }}"
         signal: fail
       register: result
@@ -42,6 +46,8 @@
       community.healthchecksio.ping:
         state: present
         api_key: "{{ api_key }}"
+        management_api_base_url: "{{ management_api_base_url }}"
+        ping_api_base_url: "{{ ping_api_base_url }}"
         uuid: "{{ check_uuid }}"
         signal: success
       register: result
